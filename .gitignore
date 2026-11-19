@@ -1,0 +1,16 @@
+# Dependências (recriadas com "npm install" dentro de cada pasta aula-NN)
+node_modules/
+
+# Configurações com segredos
+.env.production
+
+# Dados locais e logs
+dados/
+*.sqlite
+*.log
+
+# Editores e sistema operacional
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

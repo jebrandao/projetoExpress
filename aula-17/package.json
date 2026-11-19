@@ -1,0 +1,32 @@
+{
+  "name": "api-escola",
+  "version": "1.0.0",
+  "description": "API de gestão escolar - curso Node.js e Express",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "start:prod": "cross-env NODE_ENV=production node src/server.js",
+    "bd": "node scripts/consultar.js",
+    "migrar": "node scripts/migrar.js",
+    "migrar:desfazer": "node scripts/migrar.js desfazer",
+    "migrar:status": "node scripts/migrar.js status",
+    "test": "cross-env NODE_ENV=test node --test"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "express": "^5.3.0",
+    "mysql2": "^3.24.6",
+    "sequelize": "^6.37.8",
+    "sqlite3": "^6.0.1",
+    "swagger-jsdoc": "^6.3.0",
+    "swagger-ui-express": "^5.0.1",
+    "umzug": "^3.8.3",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0",
+    "supertest": "^7.3.2"
+  }
+}
